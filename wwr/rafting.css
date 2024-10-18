@@ -1,10 +1,10 @@
 :root {
-    --primary-color: #91BBEE;
-    --secondary-color: #1F2EC1;
-    --accent-color: #EF502C;
+    --primary-color: black;
+    --secondary-color:white;
+    
 
     --text-color: #ffffff;
-    --background-color: #b8312ad1;
+    --background-color:gray;
     --heading-font: sans-serif Arial;
     --body-font: Roboto;
     --max-width: 1200px;
@@ -106,7 +106,7 @@ header {
 }
   
 .logo{
-    width: 100+px;
+    width: 100px;
 }
   
 nav ul {
@@ -145,6 +145,7 @@ nav ul li a:hover {
     
 }
   
+
 .pa {
     font-size: 1.2em;
     line-height: 1.5;
@@ -154,10 +155,11 @@ nav ul li a:hover {
 }
 .adventure {
     display: grid;
-    grid-template-rows: repeat(5, auto);
-    gap: 1px;
+    grid-template-columns: repeat(5, auto);
+    gap: 0px;
     padding: 10px;
     text-align: center;
+    
 }
   
 figure {
@@ -171,7 +173,7 @@ figure {
   
 figcaption {
     font-style: italic;
-    margin-top: 10px;
+    margin-top: 1px;
   }
   
   footer {
