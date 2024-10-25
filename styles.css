@@ -1,73 +1,144 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
-nav {
-    background-color: steelblue;
-    padding: 10px;
-}
- nav a {
-    color: white;
-    display: block;
-    padding: 5px;
-    margin: 0rem;
-    text-align: left;
- }
- h1 {
-    color: steelblue;
- }
- img {
-    width: 150px;
-    height: auto;
-    border: 1px solids steelblue;
-    padding: 3px;
-    box-shadow:0 0 30px gray;
- }
- p { 
-    padding: 10px;
-    
- }
-main { max-width: 500px;
-
-}
-aside {
-    width: 20em;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0,0, 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-    
-
-}
-aside img {
-    width: 200px;
-    height: auto;
-
-}
-main img {
-    width: 150px;
-    height: auto;
-    float: right;
-    
-}
-p {padding: 0;}
-footer {
-    margin-top: 15px;
-    border-top: 1px solid#000;
-    text-align: center;
-
-}
-/*class selectors*/
-.box{
-    width: 20rem;
-    margin: 1rem;
-    padding: 0rem;
-    border: 1px solid gray;
-    background-color: skyblue;
-    color: #000;
-}
+#sw-si-extension-host {
+    display : block !important ;
+    }
+    #si-extension-event-button {
+    background-color : transparent;
+    border : none;
+    cursor : pointer;
+    width : 40px;
+    height : 40px;
+    padding : 10px;
+    border-radius : 50%;
+    transition : background 0.2s ease-in-out;
+    margin : auto 0;
+    position : relative;
+    }
+    #si-extension-event-button.si-extension-outlook-button {
+    width : 30px;
+    height : 30px;
+    padding : 7px;
+    }
+    #si-extension-event-button:hover {
+    background-color : rgb(181, 190, 198, 0.2);
+    }
+    #si-extension-event-button img {
+    max-width : 20px;
+    object-fit : contain;
+    }
+    #si-extension-event-button.si-extension-outlook-button img {
+    max-width : 15px;
+    object-fit : contain;
+    }
+    #si-extension-event-button-tooltip {
+    position : absolute;
+    top : 0;
+    right : 0;
+    display : inline-flex;
+    justify-content : center;
+    align-items : center;
+    padding : 8px 16px;
+    border-radius : 3px;
+    color : #f5f9fd;
+    font-size : 13px;
+    line-height : 20px;
+    font-family : 'Roboto', sans-serif;
+    white-space : nowrap;
+    background-color : #092540;
+    box-shadow : 0 3px 5px 0 rgb(42, 62, 82, 0.12);
+    opacity : 0;
+    transition : opacity 0.2s ease-in-out;
+    transform : translate(calc(50% - 20px),calc(100% + 16px));
+    z-index : 2147483647;
+    }
+    #si-extension-event-button.si-extension-outlook-button #si-extension-event-button-tooltip {
+    transform : translate(10%,calc(100% + 8px));
+    }
+    #si-extension-event-button.si-extension-outlook-button #si-extension-event-button-tooltip.si-extension-outlook-tooltip-details {
+    transform : translate(25%,calc(100% + 8px));
+    }
+    #si-extension-event-button-tooltip::after {
+    content : '';
+    position : absolute;
+    top : 0;
+    left : 50%;
+    transform : translate(-50%,-100%);
+    border : transparent solid 8px;
+    border-bottom-color : #092540;
+    }
+    .si-extension-outlook-button #si-extension-event-button-tooltip::after {
+    transform : translate(175%,calc(-100% + 1px));
+    }
+    .si-extension-outlook-button.si-extension-outlook-button #si-extension-event-button-tooltip::after {
+    transform : translate(350%,calc(-100% + 1px));
+    }
+    .si-extension-outlook-button.si-extension-outlook-button #si-extension-event-button-tooltip.si-extension-outlook-tooltip-details::after {
+    transform : translate(175%,calc(-100% + 1px));
+    }
+    #si-extension-event-button:hover #si-extension-event-button-tooltip {
+    opacity : 1;
+    }
+    * {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+    }
+    nav {
+    background-color : steelblue;
+    padding : 10px;
+    }
+    nav a {
+    color : white;
+    display : block;
+    padding : 5px;
+    margin : 0;
+    text-align : left;
+    }
+    h1 {
+    color : steelblue;
+    }
+    img {
+    width : 150px;
+    height : auto;
+    padding : 3px;
+    box-shadow : 0 0 30px gray;
+    }
+    p {
+    padding : 10px;
+    }
+    main {
+    max-width : 500px;
+    }
+    aside {
+    width : 20em;
+    margin : 1rem;
+    border : rgb(0, 0, 0, 0.2) solid 1px;
+    padding : 1rem;
+    background-color : #eee;
+    color : #333;
+    text-align : center;
+    }
+    aside img {
+    width : 200px;
+    height : auto;
+    }
+    main img {
+    width : 150px;
+    height : auto;
+    float : right;
+    }
+    p {
+    padding : 0;
+    }
+    footer {
+    margin-top : 15px;
+    border-top : 1px solid #000;
+    text-align : center;
+    }
+    .box {
+    width : 20rem;
+    margin : 1rem;
+    padding : 0;
+    border : gray solid 1px;
+    background-color : skyblue;
+    color : #000;
+    }
